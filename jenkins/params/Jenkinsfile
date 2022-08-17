@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+    stages {
+        stage("Demo") {
+            steps {
+                echo "Deploy name is set to: ${params.deployName} - 
+                Deploy to is set to: ${params.deployTo} - 
+                Confirmation to is set to: ${params.confirm}"
+            }
+        }
+    }
+}
